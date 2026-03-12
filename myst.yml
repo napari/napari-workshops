@@ -16,6 +16,13 @@ project:
     - format: pdf
       template: plain_latex_book
       output: exports/napari_workshop.pdf
+  error_rules:
+    - rule: link-resolves
+      severity: ignore
+      keys:
+        # GH is rather flaky for CI right now, temporary measure
+        # https://github.com/jupyter-book/mystmd/issues/2122#issuecomment-4042718629
+         - 'https://github.com/**'
   toc:
     - file: home.md
       title: Home
