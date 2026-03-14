@@ -8,19 +8,19 @@ Welcome to the napari workshops repository! This collection provides comprehensi
 
 This repository contains three progressive workshops:
 
-### [Workshop 1: Introduction to napari](https://napari.github.io/napari-workshops/01-intro-napari/index.html)
+### [Workshop 1: Introduction to napari](https://napari.org/workshops/01-intro-napari/index.html)
 
 **Level:** Beginner | **Duration:** 3-4 hours
 
 Learn napari's GUI for bioimage visualization, manual annotation, and interactive analysis. Perfect for microscopists and biologists who want to explore their data interactively.
 
-### [Workshop 2: Extending napari with Scripts](https://napari.github.io/napari-workshops/02-extend-napari/index.html)
+### [Workshop 2: Extending napari with Scripts](https://napari.org/workshops/02-extend-napari/index.html)
 
 **Level:** Intermediate | **Duration:** 3-4 hours
 
 Build custom analysis tools using magicgui widgets, event callbacks, and mouse interactions. Ideal for Python users who want to customize napari for their workflows.
 
-### [Workshop 3: Developing napari Plugins](https://napari.github.io/napari-workshops/03-develop-napari-plugins/index.html)
+### [Workshop 3: Developing napari Plugins](https://napari.org/workshops/03-develop-napari-plugins/index.html)
 
 **Level:** Intermediate - Advanced | **Duration:** 3-4 hours
 
@@ -30,22 +30,32 @@ Package and share your tools as napari plugins. Learn about plugin architecture,
 
 ### Installation
 
-1. **Install napari and dependencies:**
-   ```bash
-   conda create -n napari-workshop python=3.12
-   conda activate napari-workshop
-   pip install "napari[all]" jupyterlab jupytext
-   ```
+Clone the repository and install the environment with your preferred tool:
 
-2. **Clone this repository:**
-   ```bash
-   git clone https://github.com/napari/napari-workshops.git
-   cd napari-workshops
-   ```
+**pixi (recommended)** — installs napari, Qt, and all workshop deps from conda-forge:
+```bash
+git clone https://github.com/napari/workshops.git
+cd workshops
+pixi install          # resolves + installs everything
+pixi run -- napari    # test the napari viewer
+pixi run -- jupyter lab
+```
 
-3. **Start learning!** Navigate to the workshop you want and follow along.
+**uv** — pure PyPI install, no conda required:
+```bash
+git clone https://github.com/napari/workshops.git
+cd workshops
+uv sync --group dev
+uv run napari
+uv run jupyter lab
+```
 
-For detailed installation instructions, see our [installation guide](shared/installation.md).
+**conda** — traditional approach, see the full [installation guide](shared/installation.md):
+```bash
+conda create -n napari-workshops -c conda-forge python=3.12 napari pyqt \
+    napari-animation matplotlib jupyterlab jupytext jupyterlab-myst
+conda activate napari-workshops
+```
 
 ### Cloud Options
 
@@ -74,13 +84,17 @@ We welcome contributions! Whether it's fixing typos, improving explanations, or 
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
-##  Building the Documentation
-
-To build the workshop website locally:
+## Building the Documentation
 
 ```bash
-pip install -r requirements.txt
-jupyter book build .
+# pixi (recommended)
+pixi install
+pixi run build   # executes notebooks + builds static site
+
+# uv
+uv sync --group dev
+uv run python scripts/copy_theme_css.py   # generate CSS
+uv run jupyter-book build --html --execute --strict
 ```
 
 The built site will be in `_build/html/`.
@@ -108,4 +122,4 @@ These workshops are developed and maintained by the napari community. Special th
 
 ---
 
-**Ready to start?** Head to [Workshop 1](https://napari.github.io/napari-workshops/01-intro-napari/index.html) to begin your napari journey!
+**Ready to start?** Head to [Workshop 1](https://napari.org/workshops/01-intro-napari/index.html) to begin your napari journey!
