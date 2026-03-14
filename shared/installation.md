@@ -3,17 +3,76 @@
 # napari installation
 
 ```{tip}
-For the best experience, we recommend installing and running napari on your local machine. 
+For the best experience, we recommend installing and running napari on your local machine.
 However, if you prefer to not install anything locally, you can run the workshop in the cloud. For instructions, please see {ref}`cloud-setup`.
 ```
 
 napari is a Python application and package, so it requires a working Python installation.
-There are multiple ways that Python installations and packages can be managed. For a detailed
-breakdown, we recommend [this excellent guide and tutorial by Talley Lambert (Harvard Medical School)](https://hackmd.io/@talley/SJB_lObBi).
+There are multiple ways to manage Python environments — choose whichever approach fits you best.
+For a detailed breakdown of the landscape, see [this guide by Talley Lambert (Harvard Medical School)](https://hackmd.io/@talley/SJB_lObBi).
 
-```{important}
-For the purposes of this workshop, for consistency, we will use [`conda`](https://docs.conda.io/en/latest/) as the Python, package, and environment manager. However, you can use your own, preferred method to install `napari`, `PyQt5`, and `jupyterlab` into a virtual environment with Python 3.12. Please refer to the [napari installation documentation](https://napari.org/stable/tutorials/fundamentals/installation.html).  
+## Quick Start with pixi (Recommended)
+
+[pixi](https://pixi.sh) is a modern environment manager that handles Python, conda-forge
+packages, and binary dependencies (like Qt) in one step. It is the fastest way to reproduce
+the exact workshop environment on any platform.
+
+### 1. Install pixi
+
+Follow the [pixi installation instructions](https://pixi.sh/latest/#installation) for your
+operating system — typically a single `curl` or `winget` command.
+
+### 2. Clone the workshop repository
+
+```bash
+git clone https://github.com/napari/napari-workshops.git
+cd napari-workshops
 ```
+
+### 3. Install the environment
+
+```bash
+pixi install
+```
+
+This resolves and installs napari, PyQt, matplotlib, jupyter-book, and all other workshop
+dependencies from conda-forge. No activation step is needed — pixi manages the environment
+automatically.
+
+### 4. Test your installation
+
+```bash
+pixi run -- napari           # opens the napari viewer
+pixi run -- jupyter lab      # opens JupyterLab in your browser
+```
+
+### 5. Launch the workshop site locally
+
+```bash
+pixi run start               # builds CSS and starts the live-preview server
+```
+
+---
+
+## Option B: Using uv (for Python-savvy users)
+
+[uv](https://docs.astral.sh/uv/) resolves everything from PyPI with no conda dependency.
+It does not manage Qt system libraries, but `napari[all]` on PyPI bundles PyQt6.
+
+```bash
+# 1. Install uv: https://docs.astral.sh/uv/getting-started/installation/
+# 2. Clone the repo (same as above), then:
+uv sync --group dev       # installs into .venv/
+
+# Test
+uv run napari
+uv run jupyter lab
+uv run jupyter-book start
+```
+
+---
+
+## Option C: Using conda (traditional approach)
 
 ## Installing Python using `conda`
 
@@ -125,10 +184,11 @@ Once you have that set, you can skip to [the next section](#setting-up-your-napa
 2. We will use a virtual environment to encapsulate the Python tools used for this workshop.
    This ensures that the requirements for this workshop do not interfere with
    any other Python projects. To create the environment (named
-   `napari-workshop`) with Python 3.11 in it, enter the following command:
+   `napari-workshop`) with the workshop dependencies, enter the following command:
 
     ```bash
-    conda create -n napari-workshop -c conda-forge python=3.12 napari pyqt jupyterlab
+    conda create -n napari-workshop -c conda-forge python=3.12 napari pyqt \
+        napari-animation matplotlib jupyterlab jupytext jupyterlab-myst
     ```
 
 3. Once the environment setup has finished, activate the environment:

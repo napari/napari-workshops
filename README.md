@@ -30,22 +30,32 @@ Package and share your tools as napari plugins. Learn about plugin architecture,
 
 ### Installation
 
-1. **Install napari and dependencies:**
-   ```bash
-   conda create -n napari-workshop python=3.12
-   conda activate napari-workshop
-   pip install "napari[all]" jupyterlab jupytext
-   ```
+Clone the repository and install the environment with your preferred tool:
 
-2. **Clone this repository:**
-   ```bash
-   git clone https://github.com/napari/napari-workshops.git
-   cd napari-workshops
-   ```
+**pixi (recommended)** — installs napari, Qt, and all workshop deps from conda-forge:
+```bash
+git clone https://github.com/napari/napari-workshops.git
+cd napari-workshops
+pixi install          # resolves + installs everything
+pixi run -- napari    # test the napari viewer
+pixi run -- jupyter lab
+```
 
-3. **Start learning!** Navigate to the workshop you want and follow along.
+**uv** — pure PyPI install, no conda required:
+```bash
+git clone https://github.com/napari/napari-workshops.git
+cd napari-workshops
+uv sync --group dev
+uv run napari
+uv run jupyter lab
+```
 
-For detailed installation instructions, see our [installation guide](shared/installation.md).
+**conda** — traditional approach, see the full [installation guide](shared/installation.md):
+```bash
+conda create -n napari-workshop -c conda-forge python=3.12 napari pyqt \
+    napari-animation matplotlib jupyterlab jupytext jupyterlab-myst
+conda activate napari-workshop
+```
 
 ### Cloud Options
 
@@ -74,13 +84,17 @@ We welcome contributions! Whether it's fixing typos, improving explanations, or 
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
-##  Building the Documentation
-
-To build the workshop website locally:
+## Building the Documentation
 
 ```bash
-pip install -r requirements.txt
-jupyter book build .
+# pixi (recommended)
+pixi install
+pixi run build   # executes notebooks + builds static site
+
+# uv
+uv sync --group dev
+uv run python scripts/copy_theme_css.py   # generate CSS
+uv run jupyter-book build --html --execute --strict
 ```
 
 The built site will be in `_build/html/`.
