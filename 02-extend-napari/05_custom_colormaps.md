@@ -32,7 +32,7 @@ nuclei = imread(nuclei_url)
 
 ## Viewing the image
 
-As we did in the previous notebooks, we can view the image in napari using the `napari.add_image()` function. Here we set the colormap to `blue`. We additionally set the contrast limits and select a z slice where the nuclei are in focus.
+As we did in the previous notebooks, we can view the image in napari using the `viewer.add_image()` function. Here we set the colormap to `blue`. We additionally set the contrast limits and select a z slice where the nuclei are in focus.
 
 ```{code-cell} ipython3
 :tags: [remove-output]
@@ -40,7 +40,7 @@ As we did in the previous notebooks, we can view the image in napari using the `
 import napari
 
 viewer = napari.Viewer()
-image = napari.add_image(
+image = viewer.add_image(
     nuclei,
     colormap='blue',
     contrast_limits=(0, 0.4)
