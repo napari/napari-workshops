@@ -39,14 +39,19 @@ this tutorial.
  git clone https://github.com/napari/napari-workshop-template.git
  ```
 
-## Install the additional `jupytext` dependency
+## Ensuring notebook support is installed
 
-Because the notebooks were converted to MyST Markdown files (with a .md extension),
-to better visualize on GitHub and provide a nice rendered look on the web,
-you need to install one additional dependency to run them locally.
+Because the notebooks use MyST Markdown format (`.md` files with executable cells), you need
+`jupytext` and `jupyterlab-myst` installed in your environment.
+
+**If you set up your environment with pixi or uv** (by cloning the repo and running
+`pixi install` or `uv sync --group dev`), these dependencies are already included — nothing
+extra to do.
+
+**If you used conda** to create a manual environment, install them now:
 
 ````{important}
-Remember to activate the right environment!
+Remember to activate the right environment first!
 
 ```bash
 conda activate napari-workshop
@@ -54,28 +59,29 @@ conda activate napari-workshop
 ````
 
 ```bash
-conda install jupytext jupyterlab-myst
+conda install -c conda-forge jupytext jupyterlab-myst
 ```
 
 
 ## Launch the `jupyter lab` application
 
-Navigate to the `notebooks` subdirectory of the
-`napari-workshop-template` directory you just cloned or downloaded.
-
-```
-cd <path to napari-workshop-template>/notebooks
-```
-
-Remember to activate the `napari-workshop` conda environment if you haven't already.
+Navigate to the directory you just cloned or downloaded.
 
 ```bash
+cd workshops   # or the path where you extracted the .zip
+```
+
+Activate your environment and start JupyterLab:
+
+```bash
+# pixi (no activation needed)
+pixi run -- jupyter lab
+
+# uv
+uv run jupyter lab
+
+# conda
 conda activate napari-workshop
-```
-
-To start the Jupyter application, enter:
-
-```bash
 jupyter lab
 ```
 
