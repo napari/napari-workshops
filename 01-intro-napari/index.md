@@ -1,6 +1,8 @@
-(intro-napari)=
+---
+label: intro-napari 
+---
 
-# Workshop 1: Introduction to napari
+# Introduction to napari
 
 **Level:** Beginner  
 **Duration:** 3-4 hours
