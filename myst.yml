@@ -21,10 +21,10 @@ project:
         # GH is rather flaky for CI right now, temporary measure
         # https://github.com/jupyter-book/mystmd/issues/2122#issuecomment-4042718629
          - 'https://github.com/**'
+         - 'https://forum.image.sc/**'
   toc:
     - file: home.md
       title: Home
-    
     - title: Introduction to napari
       children:
         - file: 01-intro-napari/index.md
@@ -34,6 +34,7 @@ project:
         - file: 01-intro-napari/03_manual_annotation.md
         - file: 01-intro-napari/04_interactive_analysis.md
         - file: 01-intro-napari/05_using_plugins.md
+    - file: schedule.md
 site:
   options:
     favicon: resources/logo.ico
