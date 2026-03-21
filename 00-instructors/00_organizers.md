@@ -68,6 +68,7 @@ Adapted from the
 - [ ] Publish a brief retrospective summary
 - [ ] Close the ti.to listing once the waitlist is no longer useful
 
+(zoom-setup)=
 ## Zoom Setup
 
 See the Carpentries
@@ -90,6 +91,7 @@ for detailed Zoom guidance. Key settings for napari workshops:
 - Assign at least one helper per breakout room during "You" exercises.
 - Set a 10-minute timer so rooms close automatically; helpers return to main.
 
+(zulip-stream-setup)=
 ## Zulip Stream Setup
 
 A dedicated Zulip stream gives participants a place to ask questions before,
@@ -122,6 +124,7 @@ These workshops run through [NumFOCUS](https://numfocus.org/) on
 - **Attendee messaging:** ti.to supports markdown email to all registrants —
   use this for the pre-workshop email and reminder
 
+(pre-workshop-email-template)=
 ## Pre-Workshop Email Template
 
 Send via ti.to **one week before** the workshop and again **the day before**.
@@ -134,7 +137,7 @@ Adapt the bracketed fields.
 >
 > We're looking forward to seeing you at the **Introduction to napari workshop**
 > on **[DATE]** at **[TIME]**
-> ([convert to your timezone]([TIMEZONE_LINK])).
+> ([convert to your timezone](https://www.timeanddate.com/worldclock/converter.html)).
 >
 > **Before the workshop:**
 >
@@ -168,6 +171,7 @@ Adapt the bracketed fields.
 > [INSTRUCTOR_NAME] and the napari team
 
 
+(hackmd-shared-notes-template)=
 ## HackMD Shared-Notes Template
 
 See the Carpentries
@@ -255,6 +259,7 @@ Send a short survey within 24 hours of the workshop. Suggested questions:
 Google Forms or a NumFOCUS-approved survey tool works well. Share the link in
 the final 10 minutes of the session and in the post-workshop email.
 
+(social-media-templates)=
 ## Social Media Templates
 
 Extracted and adapted from workshop planning notes. Tailor dates and links
@@ -276,8 +281,8 @@ before posting.
 >
 > ✅ **$20 USD pilot price** | 🪑 Limited to 20 participants | 🌐 Virtual
 >
-> 📅 **[DATE 1]** — [TIME + TZ] | [Register]([LINK_1])  
-> 📅 **[DATE 2]** — [TIME + TZ] | [Register]([LINK_2])
+> 📅 **[DATE 1]** — [TIME + TZ] | Register: LINK_1  
+> 📅 **[DATE 2]** — [TIME + TZ] | Register: LINK_2
 >
 > \#napari \#Python \#ImageAnalysis \#BioImaging \#OpenSource
 
@@ -302,9 +307,9 @@ before posting.
 > We're running two pilot virtual workshops for anyone who wants to get
 > started with napari's GUI. No Python required.
 >
-> - [DATE 1], [TIME + TZ] — [Register]([LINK_1])
-> - [DATE 2], [TIME + TZ] — [Register]([LINK_2])
+> - [DATE 1], [TIME + TZ] — Register: LINK_1
+> - [DATE 2], [TIME + TZ] — Register: LINK_2
 >
 > Cost: $20 USD | 20 seats per session | bundled app install
 >
-> Questions? Reply here or drop into [#workshops]([ZULIP_CHANNEL]).
+> Questions? Reply here or drop into #workshops (add stream link).

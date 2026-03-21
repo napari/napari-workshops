@@ -20,6 +20,7 @@ Key principles:
 - **Safety.** Follow the Code of Conduct; normalise questions in
   chat or in the shared document.
 
+(diversity-equity-and-inclusion)=
 ## Diversity, Equity, and Inclusion
 
 We are committed to building an inclusive environment. The workshop expects participants to follow the napari community
@@ -115,6 +116,7 @@ See also the Carpentries
   a 2-minute warning before returning to main. State the task clearly (in
   Zoom chat, in HackMD, and verbally) before opening rooms.
 
+(presentation-instructions)=
 ## Presentation Instructions
 
 ### Light mode
