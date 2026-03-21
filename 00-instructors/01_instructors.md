@@ -1,4 +1,8 @@
-## Philosophy
+---
+title: Instructor Guide
+---
+
+# Philosophy
 
 These workshops are inspired by the
 [Carpentries](https://carpentries.org) model: live coding, learner-centred
@@ -184,56 +188,56 @@ unset QT_SCALE_FACTOR_ROUNDING_POLICY
 
 Run through this checklist at the start of every session:
 
-- [ ] Welcome everyone and introduce all instructors and helpers by name.
-- [ ] State the Code of Conduct:
+- Welcome everyone and introduce all instructors and helpers by name.
+- State the Code of Conduct:
 
   > *"We expect all participants to be respectful and to follow the
   > [napari Code of Conduct](https://napari.org/stable/community/code_of_conduct.html).
   > If you experience or witness a violation, please DM an instructor or email
   > conduct@napari.org."*
 
-- [ ] Read the DEI commitment (brief version):
+- Read the DEI commitment (brief version):
 
   > *"This workshop is designed for everyone regardless of background,
   > nationality, or prior experience. We actively work to make it accessible.
   > Please tell us if we can do better."*
 
-- [ ] Share the HackMD link in chat and ask everyone to add their name and
+- Share the HackMD link in chat and ask everyone to add their name and
   field/location to the icebreaker section.
-- [ ] Share the Zulip invite link and encourage participants to join the
+- Share the Zulip invite link and encourage participants to join the
   napari community.
-- [ ] Explain Zoom conventions:
+- Explain Zoom conventions:
   - Mute when not speaking
   - Use chat for questions — a helper will relay or answer
   - Use reactions (👍 ready to move on; ✋ stuck or need help)
   - Video on if comfortable, off if not
-- [ ] Ask if anyone has accessibility needs we should accommodate (private DM is
+- Ask if anyone has accessibility needs we should accommodate (private DM is
   fine).
-- [ ] State the rough schedule and when the breaks will be.
+- State the rough schedule and when the breaks will be.
 
 ## Closing Segment (last 20–30 minutes)
 
-- [ ] Ask aloud for a debrief: *"What is one thing that was confusing?"*
+- Ask aloud for a debrief: *"What is one thing that was confusing?"*
   and *"What are you most excited to try after today?"*
-- [ ] Share the post-workshop survey link in chat and in HackMD.
-- [ ] Point to key community resources:
+- Share the post-workshop survey link in chat and in HackMD.
+- Point to key community resources:
   - [napari.org](https://napari.org/stable/) — documentation and gallery
   - [napari-hub.org](https://napari-hub.org) — plugin discovery
   - [Zulip](https://napari.zulipchat.com) — community chat
   - [image.sc](https://forum.image.sc/) — image analysis forum
-- [ ] Invite participants to join the napari community — contributions are
+- Invite participants to join the napari community — contributions are
   welcome at all levels (docs, testing, plugins, core).
-- [ ] Keep the Zoom meeting open for 10 minutes after the official end time
+- Keep the Zoom meeting open for 10 minutes after the official end time
   for lingering questions.
 
 ## After the Workshop (instructor tasks)
 
-- [ ] Submit any bugs or issues discovered during the live session as GitHub
+- Submit any bugs or issues discovered during the live session as GitHub
   issues, linking to the relevant lesson file.
-- [ ] Collect and summarise survey results for the team.
-- [ ] Post a follow-up message in the Zulip workshop stream with any resources,
+- Collect and summarise survey results for the team.
+- Post a follow-up message in the Zulip workshop stream with any resources,
   links, or tips mentioned during the session.
-- [ ] Write a brief retrospective (what worked, what didn't, timing notes)
+- Write a brief retrospective (what worked, what didn't, timing notes)
   in `00-instructors/retrospectives/` — create the file if it doesn't exist.
 
 ## Pilot Workshop: Collecting Feedback

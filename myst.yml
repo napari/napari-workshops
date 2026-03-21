@@ -22,6 +22,8 @@ project:
         # https://github.com/jupyter-book/mystmd/issues/2122#issuecomment-4042718629
          - 'https://github.com/**'
          - 'https://forum.image.sc/**'
+         # [image.sc] auto-links as http://image.sc (bare domain) and returns 403
+         - 'http://image.sc'
   toc:
     - file: home.md
       title: Home

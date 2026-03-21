@@ -12,61 +12,59 @@ Adapted from the
 
 ### >2 weeks before
 
-- [ ] Confirm workshop dates, times, and timezone coverage with the instructor team
-- [ ] Set up ticketing on [ti.to](https://ti.to):
+- Confirm workshop dates, times, and timezone coverage with the instructor team
+- Set up ticketing on [ti.to](https://ti.to):
   - Title, date, description, logo, color scheme
   - Ticket price: **$20 USD** (pilot rate); NumFOCUS adds a ~5.1% fee (covers Stripe + ti.to)
   - Seat cap: **20 per session** with a waitlist enabled
   - No discount codes for pilots; add them for future workshops
   - Enable attendee questions if you want dietary/accessibility info
-- [ ] Publish on socials (see [Social Media Templates](#social-media-templates)):
+- Publish on socials (see [Social Media Templates](#social-media-templates)):
   - [napari Zulip](https://napari.zulipchat.com) `#announcements`
   - [image.sc forum](https://forum.image.sc/) under `napari` tag
   - LinkedIn, Bluesky, Mastodon
-- [ ] Plan a **second wave** of social posts ~1 week before each session; ask
-  the napari steering council or CZI comms for a repost or boost
-- [ ] Add both sessions to the napari community calendar and the image.sc
-  forum events page
-- [ ] Create a HackMD shared-notes document for each session (see [HackMD Template](#hackmd-shared-notes-template))
-- [ ] Set up the [Zulip workshop stream](#zulip-stream-setup)
+- Plan a **second wave** of social posts ~1 week before each session
+- Add both sessions to the napari community calendar and the image.sc forum events page
+- Create a HackMD shared-notes document for each session (see [HackMD Template](#hackmd-shared-notes-template))
+- Set up the [Zulip workshop stream](#zulip-stream-setup)
 
 ### 2 weeks before
 
-- [ ] Confirm instructor team and helper roles; communicate expectations
-- [ ] Send the [pre-workshop email](#pre-workshop-email-template) to registered participants via ti.to
-- [ ] Set up Zoom meeting (see [Zoom Setup](#zoom-setup)):
+- Confirm instructor team and helper roles; communicate expectations
+- Send the [pre-workshop email](#pre-workshop-email-template) to registered participants via ti.to
+- Set up Zoom meeting (see [Zoom Setup](#zoom-setup)):
   - Enable breakout rooms
   - Enable captions / live transcription
   - Set co-hosts (all instructors and helpers)
   - Record locally if participants consent?
-- [ ] Confirm the HackMD link is shareable and populated with the template
+- Confirm the HackMD link is shareable and populated with the template
 
 ### 1 week before
 
-- [ ] Send a reminder email to participants with:
+- Send a reminder email to participants with:
   - Zoom link (do not post publicly)
   - Gentle, reminder to install the bundle *before* the workshop
   - HackMD link
-- [ ] Test screen sharing + Qt scaling on the presenter machine
-- [ ] Run a full tech rehearsal with at least one instructor
-- [ ] Create the pre-workshop survey
+- Test screen sharing + Qt scaling on the presenter machine
+- Run a full tech rehearsal with at least one instructor
+- Create the pre-workshop survey
 
 ### Day of
 
-- [ ] Open Zoom **15 minutes early**; admit helpers and instructors first
-- [ ] Share the HackMD link in Zoom chat as soon as participants start joining
-- [ ] Confirm screen sharing is working and Qt scaling is set (see [scaling guide](01_instructors.md#scaling-the-napari-ui-for-teaching))
-- [ ] Set up breakout rooms in advance (pre-assign or let Zoom auto-assign)
+- Open Zoom **15 minutes early**; admit helpers and instructors first
+- Share the HackMD link in Zoom chat as soon as participants start joining
+- Confirm screen sharing is working and Qt scaling is set (see [scaling guide](01_instructors.md#scaling-the-napari-ui-for-teaching))
+- Set up breakout rooms in advance (pre-assign or let Zoom auto-assign)
 
 ### After the workshop
 
-- [ ] Send the post-workshop survey to participants (see below)
-- [ ] Hold a brief instructor debrief (15–30 min): what worked, what to fix
-- [ ] Collect and summarise survey results and share with the team
-- [ ] Post a follow-up in the Zulip workshop stream with resources mentioned
+- Send the post-workshop survey to participants (see below)
+- Hold a brief instructor debrief (15–30 min): what worked, what to fix
+- Collect and summarise survey results and share with the team
+- Post a follow-up in the Zulip workshop stream with resources mentioned
   during the session; keep the stream open for follow-up questions
-- [ ] Publish a brief retrospective summary
-- [ ] Close the ti.to listing once the waitlist is no longer useful
+- Publish a brief retrospective summary
+- Close the ti.to listing once the waitlist is no longer useful
 
 (zoom-setup)=
 ## Zoom Setup
@@ -97,15 +95,15 @@ for detailed Zoom guidance. Key settings for napari workshops:
 A dedicated Zulip stream gives participants a place to ask questions before,
 during, and after the workshop.
 
-- [ ] Create a thread in  `#workshops`
-- [ ] Pin a welcome message with:
+- Create a thread in  `#workshops`
+- Pin a welcome message with:
   - Workshop schedule and Zoom links (for participants)
   - Bundle download link
   - Code of Conduct link
   - HackMD link for each session
-- [ ] Include the Zulip stream invite link in the pre-workshop email and Zoom
+- Include the Zulip stream invite link in the pre-workshop email and Zoom
   chat on the day.
-- [ ] After the workshop, announce the stream in `#general` so the broader
+- After the workshop, announce the stream in `#general` so the broader
   community can benefit from the Q&A.
 
 ## Ticketing (ti.to)
