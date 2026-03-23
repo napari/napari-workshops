@@ -20,7 +20,7 @@ Adapted from the
   - No discount codes for pilots; add them for future workshops
   - Enable attendee questions if you want dietary/accessibility info
 - Publish on socials (see [Social Media Templates](#social-media-templates)):
-  - [napari Zulip](https://napari.zulipchat.com) `#announcements`
+  - [napari Zulip](https://napari.zulipchat.com) `#events` and `#general`
   - [image.sc forum](https://forum.image.sc/) under `napari` tag
   - LinkedIn, Bluesky, Mastodon
 - Plan a **second wave** of social posts ~1 week before each session
@@ -75,19 +75,18 @@ for detailed Zoom guidance. Key settings for napari workshops:
 
 | Setting | Recommended value |
 |---|---|
+| Waiting room | Enabled; admit participants once instructors are ready |
 | Breakout rooms | Enabled; pre-assign or auto-assign by session |
 | Live captions | Enabled (Zoom AI Companion) |
 | Recording | Local recording with participant consent; do not auto-record to cloud |
-| Waiting room | Enabled; admit participants once instructors are ready |
-| Co-hosts | All instructors and helpers |
+| Co-hosts | All instructors and helpers -- must be done inside Zoom meeting because of numFOCUS license |
 | Chat | Save chat automatically; share log with participants after |
 | Screen sharing | Host and co-hosts only (prevent accidental shares) to start |
 
 **Breakout room tips:**
 - Create rooms *before* the session starts in the Zoom web portal for faster
   assignment on the day.
-- Assign at least one helper per breakout room during "You" exercises.
-- Set a 10-minute timer so rooms close automatically; helpers return to main.
+- Set a timer so rooms close automatically; helpers return to main.
 
 (zulip-stream-setup)=
 ## Zulip Stream Setup
@@ -139,12 +138,17 @@ Adapt the bracketed fields.
 >
 > **Before the workshop:**
 >
+> This workshop will be run on the recently released napari 0.7.0 bundled application.
 > We encourage you to install the napari bundled app before we start — installation can
-> take a few minutes and troubleshooting can be chalenging live it during the
+> take a few minutes and troubleshooting can be challenging to do live during the
 > session.  Follow the
 > [installation instructions](https://napari.org/dev/getting_started/installation.html#installation-bundle-conda)
-> for your operating system. Once napari opens and you see an empty viewer,
-> you're all set.
+> for your operating system.
+> Please follow your institution's software guidelines, as some institutions may restrict application installations,
+> and reach out to your IT department if you need help. 
+> You are encouraged to complete setup ahead of time.
+> 
+> Once napari opens and you see an empty viewer, you're all set.
 >
 > **On the day:**
 >
