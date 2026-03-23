@@ -4,16 +4,6 @@ project:
   authors:
     - name: napari core team
   github: napari/workshops
-  thebe:
-    binder:
-      repo: napari/workshops
-      provider: github
-      url: https://mybinder.org
-      ref: main
-  exports:
-    - format: pdf
-      template: plain_latex_book
-      output: exports/napari_workshop.pdf
   error_rules:
     - rule: link-resolves
       severity: ignore
@@ -45,6 +35,16 @@ project:
       children:
         - file: 00-instructors/00_organizers.md
         - file: 00-instructors/01_instructors.md
+  # thebe:
+  #   binder:
+  #     repo: napari/workshops
+  #     provider: github
+  #     url: https://mybinder.org
+  #     ref: main
+  # exports:
+  #   - format: pdf
+  #     template: plain_latex_book
+  #     output: exports/napari_workshop.pdf
 site:
   options:
     favicon: resources/logo.ico
