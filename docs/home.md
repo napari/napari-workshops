@@ -15,7 +15,7 @@ curious about what napari can do — these workshops are designed to meet you wh
 No prior napari experience required. Some workshops require Python familiarity; the
 introductory workshop uses napari's graphical interface and is accessible to all.
 
-Live workshops are available — see the [workshop schedule](schedule.md) for upcoming
+Live workshops are available — see the [workshop events](events.md) for upcoming
 sessions and past events.
 
 ```{code-cell} python
