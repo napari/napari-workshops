@@ -12,7 +12,7 @@ pixi.lock
 # uv
 uv.lock
 
-# Generated CSS (built from napari-sphinx-theme + resources/_custom.css)
+# Generated CSS (built from napari-sphinx-theme + docs/_resources/_custom.css)
 *napari-theme.css
 
 # VS Code settings

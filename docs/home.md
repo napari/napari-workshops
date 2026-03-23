@@ -25,7 +25,7 @@ import napari
 from napari.utils import nbscreenshot
 
 viewer = napari.Viewer()
-viewer.open(Path() / 'resources' / 'kiribati.jpg')
+viewer.open(Path() / '_resources' / 'kiribati.jpg')
 ```
 
 ```{code-cell} python
