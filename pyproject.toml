@@ -35,9 +35,13 @@ default = { features = ["dev"], solve-group = "default" }
 
 [tool.pixi.tasks]
 copy-css = "python scripts/copy_theme_css.py"
+# Seed napari's saved window geometry to 1280x720 before any notebook runs.
+# napari restores QSettings on startup, so this once gives all kernels a
+# consistent default size without any per-notebook code.
+seed-geometry = "python scripts/seed_napari_geometry.py"
 # Build the full site (executes notebooks — requires a display server on Linux)
-build = { depends-on = ["copy-css"], cmd = "jupyter-book build --html --execute --strict" }
+build = { cmd = "jupyter-book build --html --execute --strict", depends-on = ["copy-css", "seed-geometry"] }
 # Live-preview server for local development
-start = { depends-on = ["copy-css"], cmd = "jupyter-book start" }
+start = { cmd = "jupyter-book start --execute", depends-on = ["copy-css", "seed-geometry"] }
 # Remove build artifacts
 clean = "jupyter-book clean ."

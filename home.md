@@ -1,3 +1,10 @@
+---
+kernelspec:
+  display_name: Python 3 (ipykernel)
+  language: python
+  name: python3
+---
+
 # napari workshops
 
 [napari](https://napari.org) is a powerful open-source, multi-dimensional image viewer
@@ -11,9 +18,27 @@ introductory workshop uses napari's graphical interface and is accessible to all
 Live workshops are available — see the [workshop schedule](schedule.md) for upcoming
 sessions and past events.
 
-## Self-guided workshops
+```{code-cell} python
+:tags: [remove-cell]
+from pathlib import Path
+import napari
+from napari.utils import nbscreenshot
 
-### [Introduction to napari](01-intro-napari/index.md)
+viewer = napari.Viewer()
+viewer.open(Path() / 'resources' / 'kiribati.jpg')
+```
+
+```{code-cell} python
+:tags: [remove-input]
+nbscreenshot(viewer)
+```
+
+```{code-cell} python
+:tags: [remove-cell]
+viewer.close()
+```
+
+## [Introduction to napari](01-intro-napari/index.md)
 
 **Level:** Beginner | **Duration:** 3–4 hours
 
