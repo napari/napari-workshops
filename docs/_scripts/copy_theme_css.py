@@ -18,7 +18,7 @@ if not theme_css_path.exists():
     raise FileNotFoundError(f"napari-sphinx-theme CSS not found: {theme_css_path}")
 
 theme_css = theme_css_path.read_text(encoding="utf-8")
-custom_css = pathlib.Path("resources/_custom.css").read_text(encoding="utf-8")
+custom_css = pathlib.Path("docs/_resources/_custom.css").read_text(encoding="utf-8")
 
 output = (
     "/* napari brand colors — auto-generated from napari-sphinx-theme.\n"
@@ -28,6 +28,6 @@ output = (
     + custom_css
 )
 
-out_path = pathlib.Path("resources/napari-theme.css")
+out_path = pathlib.Path("docs/_resources/napari-theme.css")
 out_path.write_text(output, encoding="utf-8")
 print(f"Generated {out_path} ({out_path.stat().st_size} bytes)")

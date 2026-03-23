@@ -35,7 +35,7 @@ pixi run start   # live-preview server (runs copy-css then jupyter-book start)
 pixi run build   # full build with notebook execution (requires a display server)
 pixi run clean   # remove _build/
 
-# uv
+# uv (must cd into docs/ first)
 uv run jupyter-book start --execute
 uv run jupyter-book build --html --execute --strict
 ```
@@ -112,10 +112,10 @@ data_dir = next(p for p in [Path('data'), Path('notebooks/data')] if p.exists())
 ### CSS and napari-sphinx theme
 
 The `start` and `build` tasks automatically run `copy-css`
-first, which merges `napari-sphinx-theme`'s CSS with `resources/_custom.css`
-to produce `resources/napari-theme.css`. This generated file is gitignored.
-uv users need to run `uv run python scripts/copy_theme_css.py` once before building.
+first, which merges `napari-sphinx-theme`'s CSS with `docs/_resources/_custom.css`
+to produce `docs/_resources/napari-theme.css`. This generated file is gitignored.
+uv users need to run `uv run python docs/_scripts/copy_theme_css.py` once before building.
 
 ### Window management, sizing, and CI reproducibility
 
-The `start` and `build` tasks also execute `scripts/seed_napari_geometry.py` to write a known window geometry to QSettings before launching notebooks. This ensures that all napari windows start with the same size, which is critical for reproducibility in CI. If you want to test different window sizes, modify the constants in that script.
+The `start` and `build` tasks also execute `docs/_scripts/seed_napari_geometry.py` to write a known window geometry to QSettings before launching notebooks. This ensures that all napari windows start with the same size, which is critical for reproducibility in CI. If you want to test different window sizes, modify the constants in that script.

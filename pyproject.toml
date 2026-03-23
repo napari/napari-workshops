@@ -16,6 +16,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "mystmd",
     "jupyter-book>=2",
     "jupyterlab",
     "jupyterlab-myst",
@@ -34,14 +35,14 @@ platforms = ["win-64", "linux-64", "osx-arm64", "osx-64"]
 default = { features = ["dev"], solve-group = "default" }
 
 [tool.pixi.tasks]
-copy-css = "python scripts/copy_theme_css.py"
+copy-css = "python docs/_scripts/copy_theme_css.py"
 # Seed napari's saved window geometry to 1280x720 before any notebook runs.
 # napari restores QSettings on startup, so this once gives all kernels a
 # consistent default size without any per-notebook code.
-seed-geometry = "python scripts/seed_napari_geometry.py"
+seed-geometry = "python docs/_scripts/seed_napari_geometry.py"
 # Build the full site (executes notebooks — requires a display server on Linux)
-build = { cmd = "jupyter-book build --html --execute --strict", depends-on = ["copy-css", "seed-geometry"] }
+build = { cmd = "cd docs && jupyter-book build --html --execute --strict", depends-on = ["copy-css", "seed-geometry"] }
 # Live-preview server for local development
-start = { cmd = "jupyter-book start --execute", depends-on = ["copy-css", "seed-geometry"] }
+start = { cmd = "cd docs && jupyter-book start --execute .", depends-on = ["copy-css", "seed-geometry"] }
 # Remove build artifacts
-clean = "jupyter-book clean ."
+clean = { cmd = "cd docs && jupyter-book clean" }
