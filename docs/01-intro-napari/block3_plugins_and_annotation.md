@@ -58,7 +58,7 @@ adds enhanced TIFF reading support, including OME-TIFF and BigTIFF.
 
 ## 18. napari-ome-zarr and the IDR (10 min)
 
-[napari-ome-zarr](https://napari-hub.org/plugins/napari-ome-zarr) lets you
+napari-ome-zarr lets you
 stream images directly from the web — no download required. The
 [Image Data Resource (IDR)](https://idr.openmicroscopy.org/) hosts thousands
 of public bioimages in OME-Zarr format. You will first need to install `napari-ome-zarr`
