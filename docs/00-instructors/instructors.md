@@ -5,7 +5,7 @@ title: Instructor Guide
 # Philosophy
 
 These workshops are inspired by the
-[Carpentries](https://carpentries.org) model: live coding, learner-centred
+[Carpentries](https://carpentries.org) model: live coding, learner-centered
 pacing, and a commitment to welcoming everyone
 regardless of background. We do not assume prior napari experience for the
 introductory workshop, and we invest heavily in setup, so that the first hour

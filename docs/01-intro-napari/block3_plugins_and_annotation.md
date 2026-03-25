@@ -80,7 +80,7 @@ Click on one of the detected scenes. You'll see the images added as layers to th
 
 If you'd like to read other different file types with `ndevio`, check out [its documentation](https://napari-hub.org/plugins/ndevio).
 
-```{note}Try some other TIFF files
+```{note} Try some other TIFF files
 There are a number of TIFF files on the [QuPath acknowledgements page](https://qupath.readthedocs.io/en/stable/docs/intro/acknowledgements.html)
 and on the [OME-TIFF sample data page](https://docs.openmicroscopy.org/ome-model/5.6.3/ome-tiff/data.html).
 
@@ -140,11 +140,11 @@ Two fundamental approaches:
 | **Vector** | Points, Shapes | Marking locations, outlines |
 | **Raster** | Labels | Pixel-wise segmentation masks |
 
-## Annotation with Points and Shapes (10 min)
+# Annotation with Points and Shapes (10 min)
 
 Use the **Cells (3D + 2Ch)** sample for this exercise.
 
-### Points layer — marking cell centers
+## Points layer — marking cell centers
 
 1. In the layer list, click **Add Points layer** (the points icon in the top-left)
    — or go to **Layer > New Points Layer**
@@ -191,7 +191,7 @@ viewer.close()
 
 Compare visualization in 2D with checking `out_of_slice_display` in layer controls — it shows points that are outside the current z-slice.
 
-## Shapes layer — outlining regions
+## Shapes layer — outlining a region
 
 1. Add a shapes layer: **Layer > New Shapes Layer**
 2. Choose a shape tool from layer controls (rectangle, ellipse, polygon, etc.)

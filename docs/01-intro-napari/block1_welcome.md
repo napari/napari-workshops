@@ -53,7 +53,7 @@ The first launch can take up to a minute. Subsequent launches are much faster.
 
 Everyone should now have napari open. You should see:
 
-- An empty **canvas** in the centre
+- An empty **canvas** in the center
 - A **layer list** panel on the left
 - A **layer controls** panel on the top-left
 - **Viewer buttons** at the bottom of the canvas
@@ -79,7 +79,7 @@ Before diving into napari, a quick conceptual grounding:
 - **Images are arrays of numbers** — each pixel has a value (brightness, intensity)
 - **n-dimensional images** — beyond rows and columns in an array, images can have more array indexes
 - **zero-based indexing** — the first element/pixel is at position 0, not 1
-- A not-so standard **convention** TZYX ordering for time, depth, height, and width dimensions
+- A common (but not universal) **convention**: TZYX ordering for time, depth, height, and width dimensions
 - **multi-channel images**  — can be just another dimension in the array (e.g. RGB(A) is shape height, width, 3 (or 4))
 - **labels** — images where pixel values are integers representing categories (e.g. 0=background, 1=cell1, 2=cell2, etc.)
 
