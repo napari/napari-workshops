@@ -215,7 +215,7 @@ Add your answer below:
 
 ## Key Links
 
-- Setup instructions: https://napari.org/workshops/01-intro-napari/00_setup.html
+- Setup instructions: https://napari.org/workshops/01-intro-napari/setup.html
 - napari docs: https://napari.org/stable/
 - napari hub (plugins): https://napari-hub.org
 - Zulip community chat: https://napari.zulipchat.com
