@@ -280,49 +280,55 @@ before posting.
 
 ### LinkedIn
 
-> 🔬 Registration is open for our pilot **Introduction to napari Workshop**!
->
-> napari is a powerful open-source, multi-dimensional image viewer for
-> scientific data analysis in Python. This hands-on, GUI-only workshop is
-> designed for biologists, imaging specialists, and data scientists — no
-> Python or napari experience required.
->
-> **What you'll learn:**  
-> → Loading and exploring multi-dimensional datasets  
-> → Customizing visualizations for your research  
-> → Discovering and using community plugins  
->
-> ✅ **$20 USD pilot price** | 🪑 Limited to 20 participants | 🌐 Virtual
->
-> 📅 **[DATE 1]** — [TIME + TZ] | Register: LINK_1  
-> 📅 **[DATE 2]** — [TIME + TZ] | Register: LINK_2
->
-> \#napari \#Python \#ImageAnalysis \#BioImaging \#OpenSource
+```markdown
+🔬 Registration is open for our pilot **Introduction to napari Workshop**!
+
+napari is a powerful open-source, multi-dimensional image viewer for
+scientific data analysis in Python. This hands-on, GUI-only workshop is
+designed for biologists, imaging specialists, and data scientists — no
+Python or napari experience required.
+
+**What you'll learn:**  
+→ Loading and exploring multi-dimensional datasets  
+→ Customizing visualizations for your research  
+→ Discovering and using community plugins  
+
+✅ **$20 USD pilot price** | 🪑 Limited to 20 participants | 🌐 Virtual
+
+📅 **[DATE 1]** — [TIME + TZ] | Register: LINK_1  
+📅 **[DATE 2]** — [TIME + TZ] | Register: LINK_2
+
+\#napari \#Python \#ImageAnalysis \#BioImaging \#OpenSource
+```
 
 ### Bluesky / Mastodon (thread)
 
-> **1/3** Registration is open for a pilot Introduction to napari Workshop!
-> napari is open-source image viewer for scientific data analysis. Hands-on,
-> GUI-only — no Python required.
-> \#napari \#Python \#ImageAnalysis \#OpenSource
->
-> **2/3** ✅ $20 USD pilot | 20 seats | virtual
-> 📅 [DATE 1] — [TIME] | [LINK_1]
-> 📅 [DATE 2] — [TIME] | [LINK_2]
->
-> **3/3** These are pilot workshops — you'll be among the first to use the
-> new materials. More workshops to follow! Feedback welcome.
+```markdown
+**1/3** Registration is open for a pilot Introduction to napari Workshop!
+napari is open-source image viewer for scientific data analysis. Hands-on,
+GUI-only — no Python required.
+\#napari \#Python \#ImageAnalysis \#OpenSource
+
+**2/3** ✅ $20 USD pilot | 20 seats | virtual
+📅 [DATE 1] — [TIME] | [LINK_1]
+📅 [DATE 2] — [TIME] | [LINK_2]
+
+**3/3** These are pilot workshops — you'll be among the first to use the
+new materials. More workshops to follow! Feedback welcome.
+```
 
 ### Zulip / image.sc
 
-> **Introduction to napari workshop — registration open!**
->
-> We're running two pilot virtual workshops for anyone who wants to get
-> started with napari's GUI. No Python required.
->
-> - [DATE 1], [TIME + TZ] — Register: LINK_1
-> - [DATE 2], [TIME + TZ] — Register: LINK_2
->
-> Cost: $20 USD | 20 seats per session | bundled app install
->
-> Questions? Reply here or drop into #workshops (add stream link).
+```markdown
+**Introduction to napari workshop — registration open!**
+
+We're running two pilot virtual workshops for anyone who wants to get
+started with napari's GUI. No Python required.
+
+- [DATE 1], [TIME + TZ] — Register: LINK_1
+- [DATE 2], [TIME + TZ] — Register: LINK_2
+
+Cost: $20 USD | 20 seats per session | bundled app install
+
+Questions? Reply here or drop into #workshops (add stream link).
+```
