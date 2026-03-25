@@ -111,6 +111,7 @@ the Axis Labels attached to the data. Go to **View > Axes > Axes Visible** to tu
 
 Try also to visualize the Color Bar (LUT) overlay for each layer by right clicking on the layer(s) that you want to visualize or toggle the color bar from the navbar menu **Layers > Measure > Color Bar**.
 
+```{tip} The Command Palette
 The [Command Palette](https://napari.org/stable/getting_started/features.html#command-palette)
 can be launched via **View > Command Palette** or with 
 `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS).
@@ -140,6 +141,7 @@ membrane = viewer.layers['membrane']
 membrane.contrast_limits = (0, 40000)
 membrane.colormap = 'orange'
 ```
+
 ```{code-cell} python
 :tags: [remove-input]
 nbscreenshot(viewer)
@@ -186,18 +188,6 @@ Enable the scale bar with **View > Scale Bar > Visible** navbar.
 If all layers have consistent units, then the scalebar displays the physical scale.
 If not, it defaults to pixels.
 
-```{code-cell} python
-:tags: [remove-cell]
-viewer.grid.stride = 2
-for l in viewer.layers:
-    l.colorbar.visible = True
-viewer.scale_bar.visible = True
-```
-```{code-cell} python
-:tags: [remove-input]
-nbscreenshot(viewer)
-```
-
 ### Console Peek
 
 napari has a built-in **Python console** that allows you to interact
@@ -209,6 +199,14 @@ viewer button.
 
 As an example, here we change the viewer scale bar units (you can't do
 this through the GUI yet):
+
+```{code-cell} python
+:tags: [remove-cell]
+viewer.grid.stride = 2
+for l in viewer.layers:
+    l.colorbar.visible = True
+viewer.scale_bar.visible = True
+```
 
 ```{code-cell} python
 viewer.scale_bar.unit = 'micrometer'
@@ -252,7 +250,7 @@ example visualizations covering various layer types and use cases.
 
 ```{note} Some examples require extra packages
 Some examples require packages that are not in the bundle and will show an
-error — just try another one. Most built-in examples work fine.
+error — just try another one.
 ```
 
 ## 14. Sharing Time (5 min)
