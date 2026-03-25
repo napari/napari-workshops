@@ -37,7 +37,7 @@ nbscreenshot(viewer)
 | Area | Purpose |
 |------|---------|
 | **Canvas** (center) | Where your image is displayed |
-| **Viewer buttons** (bottom) | 2D/3D toggle, home, grid, axes, scale bar |
+| **Viewer buttons** (bottom-left) | 2D/3D toggle, home, grid, axes, scale bar |
 | **Layer list** (left) | All open layers; click to select, eye to toggle visibility |
 | **Dimension sliders** (bottom) | Scrub through z, t, or other axes |
 | **Layer controls** (top-left) | Adjust appearance of the selected layer |
@@ -111,12 +111,11 @@ the Axis Labels attached to the data. Go to **View > Axes > Axes Visible** to tu
 
 Try also to visualize the Color Bar (LUT) overlay for each layer by right clicking on the layer(s) that you want to visualize or toggle the color bar from the navbar menu **Layers > Measure > Color Bar**.
 
-```{tip} Still haven't find what you're looking for?
 The [Command Palette](https://napari.org/stable/getting_started/features.html#command-palette)
 can be launched via **View > Command Palette** or with 
 `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS).
-This allows you to search for (almost all) napari commands by name and run them
-with needing to remember menu location or keyboard shortcuts.
+This allows you to search for (almost all) napari and plugin commands by name and run them
+without needing to remember menu location or keyboard shortcuts.
 ```
 
 ### Layer Controls
@@ -229,8 +228,8 @@ your own workflows.
 
 The [**napari-metadata**](https://napari.org/napari-metadata/)
 plugin lets you view and edit layer metadata, including 
-axis labels, scale, units physical scale and
-axis labels of your layers — essential for making measurements in real units.
+axis labels, scale, and physical units
+of your layers — essential for making measurements in real units.
 
 Open the widget: **Plugins > Layer metadata: Layer metadata**
 
