@@ -12,7 +12,7 @@ kernelspec:
 **Goal:** Navigate the viewer confidently, adjust how images look, try the
 napari gallery, and understand image metadata.
 
-## 11. Instructor-guided GUI Walkthrough (25 min)
+## Instructor-guided GUI Walkthrough (25 min)
 
 Follow along as the instructor walks through the major parts of the napari
 interface using the **Cells (3D + 2Ch)** sample image.
@@ -222,7 +222,7 @@ change different properties. You can also access individual
 layers using `viewer.layers` — the starting point for scripting napari in
 your own workflows.
 
-## 12. Layer Metadata with napari-metadata  (5 min)
+## Layer Metadata with napari-metadata  (5 min)
 
 The [**napari-metadata**](https://napari.org/napari-metadata/)
 plugin lets you view and edit layer metadata, including 
@@ -236,7 +236,7 @@ There are three parts to the widget:
 2. **Axes metadata** — axis labels, physical scale, units, and more
 3. **Copy metadata** — copy metadata from one layer to another
 
-## 13. Gallery Exploration Breakout (15 min)
+## Gallery Exploration Breakout (15 min)
 
 The [napari gallery](https://napari.org/stable/gallery) contains dozens of
 example visualizations covering various layer types and use cases.
@@ -253,7 +253,7 @@ Some examples require packages that are not in the bundle and will show an
 error — just try another one.
 ```
 
-## 14. Sharing Time (5 min)
+## Sharing Time (5 min)
 
 - What did you find in the gallery?
 - Any surprising layer types or visualizations?

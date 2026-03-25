@@ -13,7 +13,7 @@ kernelspec:
 **Goal:** Install a plugin from the napari hub, open images with it, and
 manually annotate images using Points, Shapes, and Labels layers.
 
-## 16. Plugins and the napari Hub (5 min)
+## Plugins and the napari Hub (5 min)
 
 napari's functionality can be extended with **plugins** — Python packages
 contributed by the community.
@@ -43,7 +43,7 @@ If a plugin doesn't work as expected, check its GitHub page or ask on
 [forum.image.sc](https://forum.image.sc/tag/napari).
 ```
 
-## 17. Opening Images with ndevio (10 min)
+## Opening Images with ndevio (10 min)
 
 [ndevio](https://napari-hub.org/plugins/ndevio) is a plugin that
 adds enhanced reading support for a wide range of file formats,
@@ -93,7 +93,7 @@ Does the image display as you expected? Do both plugins open the images in the s
 TIFF files not open at all and you get an error?
 ```
 
-## 18. napari-ome-zarr and the IDR (10 min)
+## napari-ome-zarr and the IDR (10 min)
 
 napari-ome-zarr lets you
 stream images directly from the web — no download required. The
@@ -121,13 +121,13 @@ is slow during the workshop, we recommend
 `https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.5/idr0062A/6001240_labels.zarr`.
 ```
 
-## 19. Sharing Time (5 min)
+## Sharing Time (5 min)
 
 - What did you open?
 - What did the metadata widget show for axis scales and units?
 - Any plugins you found interesting while browsing napari-hub?
 
-## 20. What Is Annotation? (5 min)
+## What Is Annotation? (5 min)
 
 **Manual annotation** means marking up images by hand. Common reasons:
 
@@ -143,7 +143,7 @@ Two fundamental approaches:
 | **Vector** | Points, Shapes | Marking locations, outlines |
 | **Raster** | Labels | Pixel-wise segmentation masks |
 
-## 21. Annotation with Points and Shapes (10 min)
+## Annotation with Points and Shapes (10 min)
 
 Use the **Cells (3D + 2Ch)** sample for this exercise.
 

@@ -13,7 +13,7 @@ kernelspec:
 using a plugin GUI, take a brief look at the napari console, and learn where
 to go from here.
 
-## 23. napari-skimage Segmentation Demo (5 min + 20 min hands-on)
+## napari-skimage Segmentation Demo (5 min + 20 min hands-on)
 
 [napari-skimage](https://napari-hub.org/plugins/napari-skimage)
 provides GUI access to common image-processing steps powered by scikit-image —
@@ -23,7 +23,7 @@ no code required.
 1. **Plugins > Install/Uninstall Plugins…** → search `napari-skimage` → Install
 2. Restart napari
 
-### 24. Workflow 
+### Workflow 
 
 Use **File > Open Sample > napari builtins > Cells (3D + 2Ch)** as your starting image.
 
@@ -84,13 +84,13 @@ nbscreenshot(viewer)
 viewer.close()
 ```
 
-## 25. Sharing Time and Q&A (5 min)
+## Sharing Time and Q&A (5 min)
 
 - How many nuclei did your segmentation find?
 - What measurements were in the regionprops table?
 - Open questions about the workflow or napari in general?
 
-## 26. Where to Go From Here (5 min)
+## Where to Go From Here (5 min)
 
 ### Learning Resources
 
@@ -114,7 +114,7 @@ viewer.close()
 - Browse [napari-hub.org](https://napari-hub.org) for plugins relevant to your field
 - Add a new example or sample data to napari!
 
-## 27. Survey + Wrap-up (10 min)
+## Survey + Wrap-up (10 min)
 
 Please fill in the post-workshop survey (link shared by instructors).
 
