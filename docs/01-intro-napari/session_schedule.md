@@ -57,7 +57,7 @@ with Points, Shapes, and Labels layers.
 
 ## Break (10 min)
 
-## Block 4 — Interactive Analysis and Next Steps (50 min)
+## Block 4 — Interactive Analysis and Next Steps (45 min)
 
 **By the end of this block you will:** run image filtering and segmentation
 through plugin menus, measure region properties from a Labels layer, and know
@@ -66,33 +66,7 @@ where to go from here.
 | # | Segment | Time |
 |---|---------|------|
 | 23 | napari-skimage demo: filter, threshold, segment | 5 min |
-| 24 | Console peek: a brief look at programmatic access | 5 min |
-| 25 | Segmentation tutorial w/ features-table | 20 min |
-| 26 | **Sharing time** and Q&A | 5 min |
-| 27 | Where to go from here: resources, community, next workshops | 5 min |
-| 28 | Survey + wrap-up | 10 min |
-
-**napari-skimage end-to-end workflow covers** ([full lesson](05_using_plugins.md)):
-1. Open or reload the nuclei layer (Cells 3D sample)
-2. **Layers > Filter > Filtering > Gaussian filter** — reduce noise
-3. **Layers > Filter > Thresholding** — threshold to binary
-4. **Layers > Measure > Regionprops (labels)** — measure the Labels layer
-5. Save results to CSV from the measurement table widget
-
-**Console peek** (brief — not the focus for this workshop):
-```python
-# How many nuclei did we find?
-import numpy as np
-labels = viewer.layers['nuclei labels'].data
-print(f"Number of labelled nuclei: {np.max(labels)}")
-```
-
-**Resources to share:**
-- napari documentation: [napari.org/stable](https://napari.org/stable/)
-- napari tutorials: [napari.org/stable/tutorials](https://napari.org/stable/tutorials/)
-- napari hub (plugin search): [napari-hub.org](https://napari-hub.org)
-- Community forum: [forum.image.sc/tag/napari](https://forum.image.sc/tag/napari)
-- Zulip chat: [napari.zulipchat.com](https://napari.zulipchat.com)
-- napari gallery: [napari.org/stable/gallery](https://napari.org/stable/gallery)
-- These workshop materials (self-guided): [napari.org/workshops](https://napari.org/workshops/)
-- **Next workshop:** see [events](../events.md)
+| 24 | Segmentation tutorial w/ features-table | 20 min |
+| 25 | **Sharing time** and Q&A | 5 min |
+| 26 | Where to go from here: resources, community, next workshops | 5 min |
+| 27 | Survey + wrap-up | 10 min |
