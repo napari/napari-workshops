@@ -38,30 +38,6 @@ confidently, adjust visualizations, open and save files, and take screenshots.
 | 13 | Personal exploration of examples (breakout) | 15 min |
 | 14 | **Sharing time:** What did you discover? | 5 min |
 
-**Instructor GUI walkthrough covers** ([full lesson](01_napari_gui.md)):
-- Layer controls, layer list, viewer buttons
-- 2D ↔ 3D toggle; rotate and zoom
-- Dimension sliders; merging/splitting stack channels
-- Contrast limits, colormap, blending modes
-- Scale bar; adding a Labels layer; save / screenshot
-
-**napari-metadata demo covers:**
-- Opening the metadata dock widget (**Plugins > napari-metadata: Metadata Widget**)
-- Reading the current scale and axis names
-- Setting physical scale (e.g. microns per pixel) and units
-- How layer metadata can effect rendering
-
-**Example exploration:**
-Open the [napari gallery](https://napari.org/dev/gallery) in a browser tab.
-You can drag any gallery `.py` script file 
-(from the links at the bottom of each example) directly
-onto the napari canvas and it will run immediately — no terminal needed!
-This is possible because napari has a (.py) reader, and works just like dragging and dropping an image. 
-You can also download the script and drag it in.
-Pick any example that looks interesting and try it.
-Some examples will not be able to run because they have dependencies
-that are not in the bundle, but most will work!
-
 ## Break (10 min)
 
 ## Block 3 — Plugins and Annotation (45 min)
