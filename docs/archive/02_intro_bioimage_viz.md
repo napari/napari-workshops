@@ -24,7 +24,7 @@ This notebook will introduce `napari` a fast, interactive, multi-dimensional ima
 
 ## Introducing napari 
 
-```{image} resources/napari-logo.png
+```{image} resources/napari-logo-light.svg
 :alt: napari logo
 :width: 20%
 :align: center
