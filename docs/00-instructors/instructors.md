@@ -32,7 +32,7 @@ the [Carpentries DEI statement](https://carpentries.org/about-us/#diversity-equi
 Practical commitments:
 
 - Closed captions and transcription enabled by default in Zoom.
-- Shared notes Etherpad for participants.
+- Zulip workshop stream for participant Q&A and sharing.
 - Post-workshop survey explicitly solicits accessibility and inclusion
   feedback.
 
@@ -43,13 +43,13 @@ Practical commitments:
 - Drives the screen — napari is always visible, not slides
 - Narrates every action out loud ("I'm clicking File > Open Sample >
   napari builtins > Cells 3D + 2Ch")
-- Watches the Etherpad for questions during exercises
+- Watches the Zulip workshop stream and Zoom chatfor questions during exercises
 - Advances through the [session schedule](../01-intro-napari/index.md#session-schedule)
   and calls time
 
 ## Helper instructor
 
-- Monitor the Zoom chat and Etherpad throughout
+- Monitor the Zoom chat and Zulip workshop stream throughout
 - Join breakout rooms during "You" exercises; one helper per room minimum
 - DM participants with technical issues and escalate to breakout as needed
 - Signal the lead instructor (via Zoom reaction or private chat) if the group
@@ -71,7 +71,7 @@ Practical commitments:
   least once.
 - During practice, set your display scale higher or use an env var scale to `QT_SCALE_FACTOR=1.5`
   see the [presentation instructions](#presentation-instructions) for details.
-- Close all applications except napari and a browser tab for the Etherpad
+- Close all applications except napari and a browser tab for the Zulip workshop stream
 - Join the Zoom call **10 minutes early** to test screen sharing
 
 # I → We → You in Practice
@@ -116,7 +116,7 @@ See also the Carpentries
   ready to move on, and ✋ to signal they are stuck.
 - **Breakout rooms:** Announce when rooms are opening and closing, and give
   a 2-minute warning before returning to main. State the task clearly (in
-  Zoom chat, in Etherpad, and verbally) before opening rooms.
+  Zoom chat, in the Zulip stream, and verbally) before opening rooms.
 
 (presentation-instructions)=
 # Presentation Instructions
@@ -194,8 +194,8 @@ Run through this checklist at the start of every session:
   > nationality, or prior experience. We actively work to make it accessible.
   > Please tell us if we can do better."*
 
-- Share the Etherpad link in chat and ask everyone to add their name and
-  field/location to the icebreaker section.
+- Share the Zulip workshop stream link in chat and ask everyone to post
+  an introduction (field and type of images they work with) in the **#workshops** stream.
 - Share the Zulip invite link and encourage participants to join the
   napari community.
 - Explain Zoom conventions:
@@ -211,7 +211,7 @@ Run through this checklist at the start of every session:
 
 - Ask aloud for a debrief: *"What is one thing that was confusing?"*
   and *"What are you most excited to try after today?"*
-- Share the post-workshop survey link in chat and in Etherpad.
+- Share the post-workshop survey link in chat and in the Zulip workshop stream.
 - Point to key community resources:
   - [napari.org](https://napari.org/stable/) — documentation and gallery
   - [napari-hub.org](https://napari-hub.org) — plugin discovery
