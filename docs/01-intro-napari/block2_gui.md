@@ -277,6 +277,24 @@ Take a screenshot and post it to the **#workshops** stream on
 (recommended-examples)=
 ## Recommended Examples
 
+1. 3D Layer Bounding Box Overlay
+2. 3D vector field and image across time
+3. Add labels with features
+4. Add points 3D
+5. Add vectors color by angle
+6. Anisotropic data with scale
+7. Annotate segmentation with text
+8. Colorbars and auto-tiling of overlays in grid mode
+9. Displaying xarray data in napari
+10. Features table widget
+11. Heart with multiple annotations
+12. Image points 3D
+13. Labels 3D
+14. Minimum blending
+15. Show points based on feature
+16. Surface with texture and vertex_oolors
+17. Tracks 3D
+
 
 # Sharing Time (5 min)
 
