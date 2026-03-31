@@ -7,13 +7,11 @@ kernelspec:
   name: python3
 ---
 
-# Block 4 — Interactive Analysis and Next Steps
-
 **Goal:** Run a complete filter → threshold → segment → measure workflow
 using a plugin GUI, take a brief look at the napari console, and learn where
 to go from here.
 
-## 23. napari-skimage Segmentation Demo (5 min + 20 min hands-on)
+# napari-skimage Segmentation Demo (5 min + 20 min hands-on)
 
 [napari-skimage](https://napari-hub.org/plugins/napari-skimage)
 provides GUI access to common image-processing steps powered by scikit-image —
@@ -23,9 +21,12 @@ no code required.
 1. **Plugins > Install/Uninstall Plugins…** → search `napari-skimage` → Install
 2. Restart napari
 
-### 24. Workflow 
+## Workflow 
 
 Use **File > Open Sample > napari builtins > Cells (3D + 2Ch)** as your starting image.
+
+Make sure you look through all your z-slices when gauging whether a
+particular filter or thresholding algorithm worked as expected!
 
 | Step | What to do | Why |
 |------|-----------|-----|
@@ -36,9 +37,18 @@ Use **File > Open Sample > napari builtins > Cells (3D + 2Ch)** as your starting
 | 5. Measure | **Layers > Measure > Regionprops (labels)** — select the Labels and nuclei layers | Outputs a table of features e.g. area, intensity, eccentricity per cell |
 | 6. Save | Click **Save Results** in the Regionprops widget | Export measurements for further analysis |
 
-```{tip}
-Make sure you look through all your z-slices when gauging whether a
-particular filter or thresholding algorithm worked as expected!
+```{tip} Breakout — Segmentation Workflow
+**Goal:** Run a full filter → threshold → segment → measure pipeline on the Cells sample.
+
+**Tasks:**
+
+Follow the workflow table above to process the `nuclei` layer, measure the labels, and export the results.
+
+**When you're done:**
+Post a screenshot to the **#napari-workshop-[DATE]** stream on [Zulip](https://napari.zulipchat.com):
+- Press `Alt+C` to copy the canvas or `Shift+Alt+C` to copy the canvas with the viewer UI,
+then paste (`Ctrl+V`) into Zulip.
+- Share how many nuclei your segmentation found and one thing you noticed.
 ```
 
 ```{code-cell} python
@@ -84,15 +94,15 @@ nbscreenshot(viewer)
 viewer.close()
 ```
 
-## 25. Sharing Time and Q&A (5 min)
+# Sharing Time and Q&A (5 min)
 
-- How many nuclei did your segmentation find?
+- How many nuclei did your segmentation find? *(check the Zulip stream for screenshots!)*
 - What measurements were in the regionprops table?
 - Open questions about the workflow or napari in general?
 
-## 26. Where to Go From Here (5 min)
+# Where to Go From Here (5 min)
 
-### Learning Resources
+## Learning Resources
 
 | Resource | Link |
 |----------|------|
@@ -100,21 +110,21 @@ viewer.close()
 | Gallery | [napari.org/stable/gallery](https://napari.org/stable/gallery) |
 | Plugin search | [napari-hub.org](https://napari-hub.org) |
 
-### Community & Getting Help
+## Community & Getting Help
 
 | Channel | Description |
 |---------|------|
-| [Image analysis forum](https://forum.image.sc/tag/napari) | Ask questions about using napari, how to perform different image analysis tasks, and get help from experienced image analysts. |
 | [Zulip chat](https://napari.zulipchat.com) | Chat with the napari community - developers, users and contributors. Ask questions, share your analyses, or just lurk for info! |
 | [napari GitHub](https://github.com/napari/napari) | Participate in development, report bugs and request new features. |
+| [Image.sc](https://forum.image.sc/tag/napari) | Ask questions about using napari, how to perform different image analysis tasks, and get help from experienced image analysts. |
 
-### Next Steps
+## Next Steps
 
 - Try opening one of **your own images** in napari
 - Browse [napari-hub.org](https://napari-hub.org) for plugins relevant to your field
 - Add a new example or sample data to napari!
 
-## 27. Survey + Wrap-up (10 min)
+# Survey + Wrap-up (10 min)
 
 Please fill in the post-workshop survey (link shared by instructors).
 

@@ -7,17 +7,20 @@ kernelspec:
   name: python3
 ---
 
-# Block 2 — Exploring the napari GUI
-
 **Goal:** Navigate the viewer confidently, adjust how images look, try the
 napari gallery, and understand image metadata.
 
-## 11. Instructor-guided GUI Walkthrough (25 min)
+# Instructor-guided GUI Walkthrough (25 min)
 
 Follow along as the instructor walks through the major parts of the napari
 interface using the **Cells (3D + 2Ch)** sample image.
 
 Check out the [napari viewer documentation](https://napari.org/stable/tutorials/fundamentals/viewer.html) for a full walkthrough.
+
+```{hint} Error? Help us out!
+If you run into any issues during the walkthrough, please try to copy and paste
+the error or warning message and paste into the **#napari-workshop-[DATE]** stream on [Zulip](https://napari.zulipchat.com) so we can help you troubleshoot or fix the issue for future workshops. Thank you!
+```
 
 ```{code-cell} python
 :tags: [remove-cell]
@@ -32,7 +35,7 @@ viewer.open_sample('napari', 'cells3d')
 nbscreenshot(viewer)
 ```
 
-### The Viewer Layout
+## The Viewer Layout
 
 | Area | Purpose |
 |------|---------|
@@ -42,13 +45,13 @@ nbscreenshot(viewer)
 | **Dimension sliders** (bottom) | Scrub through z, t, or other axes |
 | **Layer controls** (top-left) | Adjust appearance of the selected layer |
 
-### Key Interactions
+## Key Interactions
 
-- **Zoom:** scroll wheel (or two-finger scroll on trackpad)
+- **Zoom:** right-click and drag or scroll wheel (or two-finger scroll on trackpad)
 - **Pan:** click and drag on the canvas, hold Shift to pan in 3D mode
 - **Reset view:** click the **home button** (bottom-right row of viewer buttons)
 
-### 2D ↔ 3D Toggle
+## 2D ↔ 3D Toggle
 
 Click the **2D/3D button** in the viewer button row to switch rendering modes.
 In 3D mode you can click-drag to rotate the volume.
@@ -65,7 +68,7 @@ viewer.camera.angles = (-27, 8, -58)
 nbscreenshot(viewer)
 ```
 
-### Dimension Sliders
+## Dimension Sliders
 
 When a layer has more dimensions than the viewer can display, sliders appear at the bottom of the
 canvas. Drag a slider to move through z-slices, time points, or channels.
@@ -103,13 +106,13 @@ viewer.dims.ndisplay = 3
 nbscreenshot(viewer)
 ```
 
-### Overlays
+## Overlays
 
 There are [viewer overlays](https://napari.org/stable/getting_started/viewer.html#viewer-overlays)
 that can be added to the canvas. In this case we will add the Axes overlay to show 
 the Axis Labels attached to the data. Go to **View > Axes > Axes Visible** to turn it on.
 
-Try also to visualize the Color Bar (LUT) overlay for each layer by right clicking on the layer(s) that you want to visualize or toggle the color bar from the navbar menu **Layers > Measure > Color Bar**.
+Try also to visualize the Color Bar (LUT) overlay for each layer by **right clicking** on the layer(s) that you want to visualize or toggle the color bar from the navbar menu **Layers > Measure > Color Bar**.
 
 ```{tip} The Command Palette
 The [Command Palette](https://napari.org/stable/getting_started/features.html#command-palette)
@@ -119,7 +122,7 @@ This allows you to search for (almost all) napari and plugin commands by name an
 without needing to remember menu location or keyboard shortcuts.
 ```
 
-### Layer Controls
+## Layer Controls
 
 With a layer selected, [layer controls](https://napari.org/stable/getting_started/layers.html) at the top-left let you change:
 
@@ -164,12 +167,13 @@ nbscreenshot(viewer)
 viewer.close()
 ```
 
-### Grid View
+## Grid View
 
 Grid Mode allows you to view multiple layers in separate panels at the same time.
 This is especially useful for comparing channels in a multi-channel image.
 You can enable it with the **grid button** in the viewer buttons (bottom row, second from the right).
-You can right-click the grid button to adjust the number of rows and columns in the grid.
+You can right-click the grid button to adjust the number of rows and columns in the grid,
+including how many layers are shown in each panel (i.e. stride).
 
 ```{code-cell} python
 :tags: [remove-cell]
@@ -182,13 +186,13 @@ viewer.grid.enabled = True
 nbscreenshot(viewer)
 ```
 
-### Scale Bar
+## Scale Bar
 
 Enable the scale bar with **View > Scale Bar > Visible** navbar.
 If all layers have consistent units, then the scalebar displays the physical scale.
 If not, it defaults to pixels.
 
-### Console Peek
+## Console Peek
 
 napari has a built-in **Python console** that allows you to interact
 with the viewer programmatically. Some features that
@@ -222,7 +226,7 @@ change different properties. You can also access individual
 layers using `viewer.layers` — the starting point for scripting napari in
 your own workflows.
 
-## 12. Layer Metadata with napari-metadata  (5 min)
+# Layer Metadata with napari-metadata  (5 min)
 
 The [**napari-metadata**](https://napari.org/napari-metadata/)
 plugin lets you view and edit layer metadata, including 
@@ -236,25 +240,64 @@ There are three parts to the widget:
 2. **Axes metadata** — axis labels, physical scale, units, and more
 3. **Copy metadata** — copy metadata from one layer to another
 
-## 13. Gallery Exploration Breakout (15 min)
-
-The [napari gallery](https://napari.org/stable/gallery) contains dozens of
-example visualizations covering various layer types and use cases.
-
-**To try a gallery example without any code:**
-
-1. Open a gallery page that looks interesting: https://napari.org/stable/gallery
-2. Scroll to the bottom of the example page and click **Download Python source**
-3. Drag-and-drop the downloaded `.py` file onto the napari canvas
-4. napari will run it automatically, adding the results to the viewer
-
-```{note} Some examples require extra packages
-Some examples require packages that are not in the bundle and will show an
-error — just try another one.
+```{important} Layer metadata is always connected to viewer metadata
+Changing layer metadata usually has some effect on how the image is displayed 
+in the viewer, such as with scale and translate. However, other metadata fields,
+like axis labels and units do not update corresponding viewer metadata visuals,
+like the axes overlay, dimension slider labels, or scale bar units.
+This is partly due to the complexity of having multiple layer metadata sources,
+but is something we are looking to improve in future releases.
 ```
 
-## 14. Sharing Time (5 min)
+# Gallery Exploration Breakout (15 min)
 
-- What did you find in the gallery?
+```{admonition} Breakout
+:class: tip
+**Goal:** Try a napari gallery example and share what you found.
+
+**Tasks:**
+
+1. Open the [napari gallery](https://napari.org/stable/gallery) and find an example
+   that looks interesting to you; you may wish to look through the [](#recommended-examples).
+2. Scroll to the bottom of the example page and click **Download Python source**.
+3. Drag-and-drop the downloaded `.py` file onto the napari canvas.
+4. napari runs it automatically — explore the result! Try adjusting colors, contrast,
+   or the 3D view.
+
+> **Note:** Some examples require extra packages not in the bundle and will show an
+> error — just try another one.
+
+**When you're done (or any time during the breakout):**
+Take a screenshot and post it to the **#workshops** stream on
+[Zulip](https://napari.zulipchat.com):
+- Press `Alt+C` or `Shift+Alt+C` to copy the canvas to clipboard, then paste (`Ctrl+V`) into Zulip.
+- Add a note: *what example did you try, and what surprised or interested you?*
+```
+
+(recommended-examples)=
+## Recommended Examples
+
+1. 3D Layer Bounding Box Overlay
+2. 3D vector field and image across time
+3. Add labels with features
+4. Add points 3D
+5. Add vectors color by angle
+6. Anisotropic data with scale
+7. Annotate segmentation with text
+8. Colorbars and auto-tiling of overlays in grid mode
+9. Displaying xarray data in napari
+10. Features table widget
+11. Heart with multiple annotations
+12. Image points 3D
+13. Labels 3D
+14. Minimum blending
+15. Show points based on feature
+16. Surface with texture and vertex_oolors
+17. Tracks 3D
+
+
+# Sharing Time (5 min)
+
+- What did you find in the gallery? *(check the Zulip stream for screenshots!)*
 - Any surprising layer types or visualizations?
 - Questions about the interface?
